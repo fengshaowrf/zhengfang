@@ -118,8 +118,8 @@ def getScore(username, name, session_id, ddlXN, ddlXQ):
     """
     获取成绩
     username:学号
-    ddlXN:2014-2015
-    ddlXQ:1
+    ddlXN:2014-2015学年
+    ddlXQ:1学期
     """
     url = baseUrl + scoreUrl + '?xh=' + str(username) + '&xm=' + name.encode('UTF-8') + '&gnmkdm=N121605'
     headers = {

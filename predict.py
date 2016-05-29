@@ -91,4 +91,4 @@ if __name__ == '__main__':
 
     print verify_and_save(the_url, the_model, the_save_path)
 
-    #print verify_without_save(the_url, the_model)
+    print verify_without_save(the_url, the_model)
