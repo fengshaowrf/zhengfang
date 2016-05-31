@@ -10,6 +10,8 @@ from cStringIO import StringIO
 from sklearn.externals import joblib
 import sys
 reload(sys)
+sys.setdefaultencoding('UTF-8')
+
 #sudo apt-get update
 #sudo apt-get install build-essential python-dev python-setuptools python-numpy python-scipy libatlas-dev libatlas3gf-base
 #pip install --user --install-option="--prefix=" -U scikit-learn
@@ -167,10 +169,10 @@ def getScore(username, name, session_id, ddlXN, ddlXQ):
 
 if __name__ == '__main__':
     cookie = setCookie()
-    username = raw_input('请输入你的学号：')
-    password = raw_input('请输入你的密码：')
-    #username = ''
-    #password = ''
+    #username = raw_input('请输入你的学号：')
+    #password = raw_input('请输入你的密码：')
+    username = '13404010210'
+    password = '13065814656hu'
     result = login(username, password, cookie)
     name = result['name']
     print name
